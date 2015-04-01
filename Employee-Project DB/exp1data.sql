@@ -17,21 +17,21 @@ insert into EMPLOYEE values
 insert into EMPLOYEE values
 (009,'Eunice Love',3);
 insert into EMPLOYEE values
-(010,'Danielle	Aguilar',5);
+(010,'Danielle Aguilar',5);
 insert into EMPLOYEE values
-(011,'Sharon	Nguyen',4);
+(011,'Sharon Nguyen',4);
 insert into EMPLOYEE values
 (012,'Kristen Cobb',1);
 insert into EMPLOYEE values
-(013,'Rodney	Frank',3);
+(013,'Rodney Frank',3);
 insert into EMPLOYEE values
 (014,'Brendan Guzman',2);
 insert into EMPLOYEE values
-(015,'Pete	Tran',5);
+(015,'Pete Tran',5);
 insert into EMPLOYEE values
 (016,'Brooke Brock',3);
 insert into EMPLOYEE values
-(017,'Lila	Castillo',4);
+(017,'Lila Castillo',4);
 insert into EMPLOYEE values
 (018,'Randall Martinez',2);
 insert into EMPLOYEE values
