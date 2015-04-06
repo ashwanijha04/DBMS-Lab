@@ -11,7 +11,7 @@ PART.PNO=SUPPLY.PNO and
 PART.PNAME='Bolt';
 
 REMARK c.	Delete the parts which are green in colour;
-delete from SUPPLY (select SUPPLY.PNO from SUPPLY, PART where PART.PNO=SUPPLY.PNO and PART.COLOR='green');
+delete from SUPPLY where PNO in(select SUPPLY.PNO from SUPPLY, PART where PART.PNO=SUPPLY.PNO and PART.COLOUR='green');
 delete from PART where colour='green';
 
 REMARK d.	Find the parts that are supplied from Bengaluru;
