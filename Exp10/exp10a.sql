@@ -2,7 +2,7 @@ SET SERVEROUTPUT ON;
 
 CREATE or REPLACE procedure FACT(N in number, F out number)
 AS
-I number;
+	I number;
 
 BEGIN
 	F:=1;
@@ -14,12 +14,12 @@ END;
 /
 
 DECLARE
-N number:=&n;
-F number;
+	N number:=&n;
+	F number;
 
 BEGIN
-FACT(N,F);
-DBMS_OUTPUT.PUT_LINE('Factorial of '||N||' is: '||F);
+	FACT(N,F);
+	DBMS_OUTPUT.PUT_LINE('Factorial of '||N||' is: '||F);
 
 END;
 /

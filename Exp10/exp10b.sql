@@ -12,22 +12,22 @@ select *from employee1;
 SET SERVEROUTPUT ON;
 
 DECLARE
-cursor cur is select *from employee1;
-rows employee1%rowtype;
-t int;
+	cursor cur is select *from employee1;
+	rows employee1%rowtype;
+	t int;
 
 BEGIN
-open cur;
-t:= &t1;
-loop 
-fetch cur into rows;
-exit when cur%notfound;
-if rows.deptno=t
-then
-dbms_output.put_line('the ssn and names are '|| rows.ssn ||','||rows.name);
-end if;
-end loop;
-close cur;
+	open cur;
+	t:= &t1;
+	loop 
+		fetch cur into rows;
+		exit when cur%notfound;
+		if rows.deptno=t
+		then
+			dbms_output.put_line('the ssn and names are '|| rows.ssn ||','||rows.name);
+		end if;
+	end loop;
+	close cur;
 
 END;
 /
